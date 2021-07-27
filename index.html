@@ -7,38 +7,45 @@
     <title>rocket.q</title>
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
 
     <div id="contain">
+
         <header>
             <img src="imagens/logoRocketq.png" alt="logo Roquet.q">
         </header>
+
         <div id="bg">
             <img src="imagens/home-bg-img.svg" alt="">
         </div>
         <main>
         
             <section>
-                <h2>
+                <h2 id="teste">
                     Entrar como Participante
                 </h2>
                 <form action="">
-                    <span>digite o código da sala</span><input type="number" placeholder="Código da sala">
+                    <span class="srOnly">digite o código da sala</span><input type="number" placeholder="Código da sala">
                     <button>
                         <img src="imagens/enter-room.svg" alt=""> <span>entrar na sala</span>
                     </button>
-                    <div id="ou"></div>
+                    <div class="ou">ou</div>
                 </form>
             </section>
             <section>
                 <h2>
                     Crie a sua própia sala de forma fácil
                 </h2>
-                <a href="#">
+                <a href="#" class="button">
                     <img src="imagens/users.svg" alt="Criar uma sala">
-                </a> <span>Criar uma sala</span>
+                    <span>Criar uma sala</span>
+                </a>
             </section>
         </main>
     </div>
