@@ -8,6 +8,7 @@
     'header header'
     'left right'
     ;
+    overflow: hidden;
     
 }
 
@@ -34,7 +35,8 @@ input{
     margin: 35px 0px;
 }
 h2{
-    max-width: 300px
+    max-width: 336px;
+    display:block
 }
 .button{
     margin: 20px 0;
