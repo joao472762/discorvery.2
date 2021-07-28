@@ -1,0 +1,109 @@
+:root{
+    --black: #0d114f;
+    --white: #fafafa;
+    --red: #e83f5b;
+    --lighy-blue: #e0ecff;
+    --blue: #3485ff;
+    --background: #f6faff;
+    --overlay: #040911;
+    --icons-details: #a5b0c1;
+
+    --grey-dark: #4d5e77;
+    --grey-blue: #a1b2cd;
+    --grey-light: #e5eaf1;
+    --titleFont:  'Poopins',Arial, Helvetica, sans-serif;
+    --textFont:  'Open Sans',Arial, Helvetica, sans-serif;
+}
+#room{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+ 
+
+}/*header=======================*/
+/*button and button=========*/
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+}
+
+button, .button{
+    width: 160px;
+    height: 45px;
+    font-size: 1.8em
+   
+}
+button{
+    width: 180px;
+    margin-left: 11px;
+   
+   
+}
+.button{
+    border-width: 0.13em;
+}
+.button > img{
+    left: 5px
+}
+/*button and button===============*/
+
+/*form=====================*/
+
+#question-form{
+    margin-top: 50px
+}
+#question-form h2{
+    font-size: 2.6em;
+    margin-bottom: 24px;
+   
+}
+#form-all{
+    padding: 10px;
+    border-radius: 0px 8px 8px 8px
+}
+.send{
+    display: flex;
+    justify-content: space-between;
+}
+.send button {
+    position: relative;
+  
+    width: 100px;
+    height: 35px;
+    font-size: 1.6em
+}
+.send .private{
+    display: flex;
+    align-items: center;
+    color: var(--icons-details);
+    font-size: 1.1em;
+    font-family: 'Open Sans', 'sans', Arial, Helvetica, sans-serif;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    font-family: var(--textFont);
+    background: transparent;
+    font-size: 1.5em;
+}
+textarea::placeholder{
+    color: var(--grey-blue);
+}
+#form-all{
+    width: 100%;
+    background-color: var(--background);
+    border: 1px solid var(--grey-light);
+    font-size: 1.2em;
+    font-family: var(--textFont);
+    padding: 16px
+}
+
+
+
+
+

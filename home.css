@@ -26,15 +26,9 @@ main{
     grid-area: right;
   
 }
-.srOnly{
-    background-color: purple;
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    overflow: hidden;
-}
+
 input{
-    margin: 20px auto;
+    margin: 20px 0px;
 }
 .ou{
     margin: 40px 0px;
@@ -44,5 +38,8 @@ h2{
     display:block
 }
 .button{
+    background-color: var(--background);
     margin: 20px 0;
+   
 }
+
