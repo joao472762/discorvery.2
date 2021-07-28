@@ -46,7 +46,7 @@ h2{
     display: inline-block;
     width: 100%;
     max-width: 330px;
-    height: 2rem;
+    height: 3rem !important;
     font-size: 1.4em;
     border-radius: 6px;
     font-family: var(--textFont);
@@ -79,16 +79,17 @@ button img{
      
  }
  .button{
-    text-align: center;
+     display: flex;
+     justify-content: center;
     border: 0.2em solid var(--blue);
     align-items: center;
      color: var(--blue);
-     padding-top: 0.4em;
+     
     
  }
  .button img{
      position: relative;
-     top: 2px
+     right: 0.3em;
  }
 /*button , button and input===============*/
 
@@ -104,7 +105,6 @@ button img{
     content: '';
     width: 44%;
     display: inline-block;
-    position: relative;
     height: 1px;
     background: var(--grey-blue);
     margin-bottom: 0.2em;
@@ -121,14 +121,39 @@ button img{
    
     position: relative;
     text-align: center;
+    
    
 }
 #bg img{
     position: relative;
     bottom: 50px;
     width: 1000vh;
-    right: 160px;
+    right: 100px;
     max-width: 650px;
-    overflow: hidden 
+    overflow: hidden;
+    z-index: -34;
 }
+.ball{
+    clip-path: circle();
+    background-color: var(--blue);
+    position:fixed;
+    filter: opacity(0.1);
+  
+    
+}
+.ball.top{
+    width: 400px;
+    height: 400px;
+    right: -200px;  
+    top: -230px;
+   
+}
+.ball.bottom{
+    width: 221px;
+    height: 221px;
+  
+    right: 56px;
+    bottom: -160px;
+}
+
 
