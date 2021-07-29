@@ -4,6 +4,7 @@
     --red: #e83f5b;
     --lighy-blue: #e0ecff;
     --blue: #3485ff;
+    --blue-light2: #E1ECFF;
     --background: #f6faff;
     --overlay: #040911;
     --icons-details: #a5b0c1;
@@ -17,10 +18,11 @@
 #room{
     width: 80%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: min(112rem, 90%);
  
 
-}/*header=======================*/
+}
+/*header=======================*/
 /*button and button=========*/
 header{
     width: 100%;
@@ -52,7 +54,7 @@ button{
 }
 /*button and button===============*/
 
-/*form=====================*/
+/*question-form (*)=====================*/
 
 #question-form{
     margin-top: 50px
@@ -62,39 +64,11 @@ button{
     margin-bottom: 24px;
    
 }
-#form-all{
+#question-form form{
     padding: 10px;
     border-radius: 0px 8px 8px 8px
 }
-.send{
-    display: flex;
-    justify-content: space-between;
-}
-.send button {
-    position: relative;
-  
-    width: 100px;
-    height: 35px;
-    font-size: 1.6em
-}
-.send .private{
-    display: flex;
-    align-items: center;
-    color: var(--icons-details);
-    font-size: 1.1em;
-    font-family: 'Open Sans', 'sans', Arial, Helvetica, sans-serif;
-}
-textarea{
-    width: 100%;
-    resize: none;
-    font-family: var(--textFont);
-    background: transparent;
-    font-size: 1.5em;
-}
-textarea::placeholder{
-    color: var(--grey-blue);
-}
-#form-all{
+#question-form form{
     width: 100%;
     background-color: var(--background);
     border: 1px solid var(--grey-light);
@@ -102,7 +76,76 @@ textarea::placeholder{
     font-family: var(--textFont);
     padding: 16px
 }
+#question-form form textarea{
+    width: 100%;
+    resize: none;
+    font-family: var(--textFont);
+    background: transparent;
+    font-size: 1.5em;
+}
+#question-form form textarea::placeholder{
+    color: var(--grey-blue);
+}
 
+#question-form form footer{
+    display: flex;
+    justify-content: space-between;
+}
+#question-form form footer button {
+    position: relative;
+  
+    width: 100px;
+    height: 35px;
+    font-size: 1.6em
+}
+#question-form form footer > div{
+    display: flex;
+    align-items: center;
+    color: var(--icons-details);
+    font-size: 1.1em;
+    font-family: 'Open Sans', 'sans', Arial, Helvetica, sans-serif;
+}
+
+/*question-form (*)=====================*/
+
+/*communityQuestions(*)=================*/
+#communityQuestions > .card:nth-of-type(1){
+    margin-top: 1.4em
+}
+#communityQuestions > .card{
+    background-color: var(--lighy-blue);
+    padding: 16px;
+    font-size: 1.6em;
+    font-family: var(--titleFont);
+    border-radius: 0px 8px 8px 8px;
+    margin-top: 0.7em
+}
+
+#communityQuestions > .card .usser,#communityQuestions > .card .actions{
+    display: flex;
+    align-items: center;
+}
+
+#communityQuestions > .card .actions{
+    
+    justify-content: flex-end;
+}
+
+#communityQuestions > .card .usser img{
+    margin-right: 1em;
+}
+
+#communityQuestions > .card .actions > div a{
+    display: flex;
+    align-items: center;
+    color: var(--grey-dark);
+    margin-right: 15px
+    
+}
+#communityQuestions > .card .actions > div a img {
+    margin-right: 0.3em;
+    
+}
 
 
 
