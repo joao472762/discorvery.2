@@ -12,8 +12,12 @@
     --grey-dark: #4d5e77;
     --grey-blue: #a1b2cd;
     --grey-light: #e5eaf1;
+    --grey-medium: #eaecf2;
     --titleFont:  'Poopins',Arial, Helvetica, sans-serif;
     --textFont:  'Open Sans',Arial, Helvetica, sans-serif;
+}
+body{
+    font-size: 62.5%;
 }
 #room{
     width: 80%;
@@ -42,7 +46,7 @@ button, .button{
 }
 button{
     width: 180px;
-    margin-left: 11px;
+    margin-left: 1.1em;
    
    
 }
@@ -50,14 +54,14 @@ button{
     border-width: 0.13em;
 }
 .button > img{
-    left: 5px
+    left: 0.5em
 }
 /*button and button===============*/
 
 /*question-form (*)=====================*/
 
 #question-form{
-    margin-top: 50px
+    margin-top: 5em
 }
 #question-form h2{
     font-size: 2.6em;
@@ -71,7 +75,7 @@ button{
 #question-form form{
     width: 100%;
     background-color: var(--background);
-    border: 1px solid var(--grey-light);
+    border: .13em solid var(--grey-light);
     font-size: 1.2em;
     font-family: var(--textFont);
     padding: 16px
@@ -118,22 +122,35 @@ button{
     font-size: 1.6em;
     font-family: var(--titleFont);
     border-radius: 0px 8px 8px 8px;
-    margin-top: 0.7em
+    margin-top: 0.8em
 }
-
-#communityQuestions > .card .usser,#communityQuestions > .card .actions{
+#communityQuestions > .card .usser{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+}
+#communityQuestions > .card .usser span{
+    word-break: break-all;
 }
 
 #communityQuestions > .card .actions{
-    
+   
+  
+}
+
+#communityQuestions > .card .actions{
+    display: flex; 
     justify-content: flex-end;
 }
 
+
 #communityQuestions > .card .usser img{
+    background-color: var(--blue);
+    clip-path: circle();
+    padding: 14px;
     margin-right: 1em;
 }
+
+
 
 #communityQuestions > .card .actions > div a{
     display: flex;
@@ -144,6 +161,17 @@ button{
 }
 #communityQuestions > .card .actions > div a img {
     margin-right: 0.3em;
+    
+}
+
+
+/*communityQuestion read*/
+
+#communityQuestions > .card.read{
+    background-color: var(--grey-medium)
+}
+#communityQuestions > .card.read .usser img{
+    background: var(--grey-blue);
     
 }
 
