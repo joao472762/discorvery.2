@@ -129,7 +129,15 @@ button{
     align-items: flex-start;
 }
 #communityQuestions > .card .usser span{
-    word-break: break-all;
+    display: inline-block;
+    word-break: keep-all;
+    align-items: center;
+    min-height: 54px ;
+    display: flex;
+    font-family: 'Poppins';
+    font-size: 1em;
+    line-height: 2.3em;
+    margin-left: 0.3em;
 }
 
 #communityQuestions > .card .actions{
@@ -165,7 +173,7 @@ button{
 }
 
 
-/*communityQuestion read*/
+/*communityQuestion read===================*/
 
 #communityQuestions > .card.read{
     background-color: var(--grey-medium)
@@ -174,6 +182,67 @@ button{
     background: var(--grey-blue);
     
 }
+/*communityQuestion read============*/
+
+/* modalOverlay=================== */
+#modalOverlay{
+    background-color: #000010ab;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+
+
+}
+#modal{
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+
+}
+#modal #aswer{
+    display: inline-block;
+    margin: 25px auto 15px auto;
+}
+#modal #aswer h2{
+    margin-bottom: 15px
+}
+#modal #aswer p{
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    font-family: 'Open Sans';
+}
+#modal #aswer input{
+    display: inline-block;
+    height: 4.4em;
+    border-width: 0.2em;
+}
+
+
+
+#modal #actionsModal{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#modal #actionsModal button:nth-of-type(1){
+    background-color: var(--grey-light);
+    color: var(--black);
+    
+}
+#modal #actionsModal button:nth-of-type(2){
+    background-color: var(--red);
+    margin-left: 0.4em;
+}
+
 
 
 
