@@ -140,10 +140,7 @@ button{
     margin-left: 0.3em;
 }
 
-#communityQuestions > .card .actions{
-   
-  
-}
+
 
 #communityQuestions > .card .actions{
     display: flex; 
@@ -186,11 +183,11 @@ button{
 
 /* modalOverlay=================== */
 #modalOverlay{
-    background-color: #000010ab;
+    background-color: rgba(4, 8, 14, .8);
     position: fixed;
     height: 100%;
     width: 100%;
-    right: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,47 +197,70 @@ button{
 }
 #modal{
     background-color: var(--white);
-    padding: 40px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
+    padding: 3em;
+    width: min(600px,90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.8em;
+    filter: drop-shadow(3px -1px 1px rgba(36, 5, 5, 0.336));
 
 }
-#modal #aswer{
-    display: inline-block;
-    margin: 25px auto 15px auto;
+ #modal #aswer{
+     text-align: center;
+    
 }
+
 #modal #aswer h2{
-    margin-bottom: 15px
+    margin: 30px 0px 12px 0px ;
+    font-family: var(--titleFont);
 }
 #modal #aswer p{
     font-size: 1.8em;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     font-family: 'Open Sans';
 }
-#modal #aswer input{
-    display: inline-block;
-    height: 4.4em;
-    border-width: 0.2em;
+
+
+
+
+ #modal #actionsModal{
+    display: grid;
+    
+    grid-template-rows: 1fr 1fr;
+    white-space: none;
+    gap: 1.2em;
+    grid-template-areas: 
+    'top top';
+
+    
 }
+#modal #actionsModal input{
+    grid-area: top;
+    padding: 13px 16px;
+    margin: 0px auto 20px auto;
+    font-size: 2.1em;
+    height: 1.8em;
+    border-width: 0.09em;
+    color: var(--black);
 
+} 
 
-
-#modal #actionsModal{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
+#actionsModal input::placeholder{
+    position: static;
 }
-
+#modal #actionsModal button{
+    margin: 0px;
+}
 #modal #actionsModal button:nth-of-type(1){
+    
     background-color: var(--grey-light);
     color: var(--black);
     
 }
 #modal #actionsModal button:nth-of-type(2){
     background-color: var(--red);
-    margin-left: 0.4em;
+   
 }
 
 
