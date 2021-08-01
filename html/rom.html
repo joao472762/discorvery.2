@@ -38,10 +38,10 @@
                 
                 <h2>Faça uma pergunta</h2>
                 
-                <form action="" id="form-all">
+                <form action="" id="form-all" onsubmit="newQuestion.submit()">
                     <label for="question" class="srOnly">qual é a sua pergunta</label>
 
-                    <textarea name="question" id="question"   placeholder="Qual é a sua pergunta"  ></textarea>
+                    <textarea name="Question" id="question"   placeholder="Qual é a sua pergunta"  ></textarea>
                 
                     <footer>
                         <div>
@@ -70,28 +70,8 @@
                                 <img src="/imagens/check.svg" alt="marcar como lida"><span>Marcar como lida</span>
                             </a>
                         </div>
-                        <div id="trash">
-                            <a href="">
-                                <img src="/imagens/trash.svg" alt="excluir mensagem"> <span>Excluir</span>
-                            </a>
-                        </div>
-                    </div>
-                </div> 
-               <div class="card read">
-    
-                    <div class="usser">
-                        <img src="/imagens/user.svg" alt="foto de um usuário">
-                        <span>Qual é a diferença entre cons, var e let no javascript ?</span>
-                    </div>
-    
-                    <div class="actions">
-                        <div class="check">
-                            <a href="">
-                                <img src="/imagens/check.svg" alt="marcar como lida"><span>Marcar como lida</span>
-                            </a>
-                        </div>
-                        <div id="trash">
-                            <a href="">
+                        <div id="trash" onclick="modal.active()">
+                            <a href="#">
                                 <img src="/imagens/trash.svg" alt="excluir mensagem"> <span>Excluir</span>
                             </a>
                         </div>
@@ -101,7 +81,7 @@
     
                     <div class="usser">
                         <img src="/imagens/user.svg" alt="foto de um usuário">
-                        <span>olá meu nome é jonas e eu queria a sua opinião para saber qual linguagem de progamação  a melhor (Pyton ou JavaScrpit), á empresa em que trabalho pediu para nós nos expecializarmos em uma dessa  </span>
+                        <span>olá meu nome é jonas e eu queria a sua opinião para saber qual linguagem de progamação  a melhor (Pyton ou JavaScrpit) </span>
                     </div>
     
                     <div class="actions">
@@ -139,7 +119,10 @@
                     </div>
                 </div>
             </section>
-            <section class="modalOverlay">
+
+            <!-- part Modal-->
+
+            <section class="modalOverlay disable">
                 <div id="modal">
                     <div id="aswer">
                         <h2>
@@ -153,12 +136,13 @@
                     <form id="actionsModal">
                         <label for="password" class="srOnly"> digite a sua senha de administradror
                         </label><input type="password" name="password" id="password" placeholder=" digite a sua senha ">
-                        <button>cancelar</button>
-                        <button>Sim excluir</button>
+                        <div class="button cancel" onclick="modal.disable()">cancelar</div>
+                        <button onclick="modal.disable()">Sim excluir</button>
                     </form>
                 </div>
             </section>
         </main>
     </div>
+    <script src="/javaScript/room.js"></script>
 </body>
 </html>

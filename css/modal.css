@@ -12,6 +12,9 @@
 
 
 }
+.modalOverlay.disable{
+    display: none;
+}
 #modal{
     background-color: var(--white);
     padding: 3em;
@@ -69,13 +72,14 @@
 #modal #actionsModal button{
     margin: 0px;
 }
-#modal #actionsModal button:nth-of-type(1){
-    
+#modal #actionsModal .button.cancel{
+    border: none;
     background-color: var(--grey-light);
     color: var(--black);
     
 }
-#modal #actionsModal button:nth-of-type(2){
+#modal #actionsModal button:nth-of-type(1){
     background-color: var(--red);
+    border: none;
    
 }
