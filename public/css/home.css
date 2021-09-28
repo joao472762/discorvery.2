@@ -1,4 +1,5 @@
 
+
 #contain{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -8,7 +9,7 @@
     'header header'
     'left right'
     ;
-    overflow: hidden;
+    overflow:  auto;
     
 }
 
